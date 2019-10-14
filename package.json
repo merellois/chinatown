@@ -1,0 +1,14 @@
+{
+    "name": "chinatownology",
+    "version": "0.0.1",
+    "homepage": "https://github.com/merellois/chinatown.git",
+    "description": "Merel's datascraper",
+    "author": "Merel Meijer",
+    "main": "app.js",
+    "dependencies": {
+        "nodemon": "latest",
+        "express": "latest",
+        "request": "latest",
+        "cheerio": "latest"
+    }
+}
