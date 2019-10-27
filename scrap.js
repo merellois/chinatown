@@ -1,21 +1,23 @@
-var express = require('express');
-var request = require('request');
-var cheerio = require('cheerio');
-var fs = require('fs');
-// localhost:8000
-var port = 8000;
-var app = express();
+const request = require('request');
+const cheerio = require('cheerio');
 
-app.get('/chinatownology', function (req,res){
+
+  // file creeren
+  // const writeStream = fs.createWriteStream('post.csv');
+  //write headers : file creeren
+  // writeStream.write('randomordercontent group1 \n')
+
 // second parameter of a function: =>
   // a subroutine is a sequence of program instructions that performs a specific task, packaged as a unit.
   // error, response, html
 request('https://www.chinatownology.com/food_culture.html', (error, response, html) => {
+
 // make sure there are no errors
 //200 is a succesful http response OK: statuscode = comminiceren de server en de browser met elkaar
   if(!error && response.statusCode == 200){
     const $ = cheerio.load(html);
     // cheerio: Fast, flexible, and lean implementation of core jQuery designed specifically for the server
+
 // Terminal: node + path van waar de file staat: krijg je de hele website die je als request hebt aan gegeven
     const mainContent = $('#mainContent');
 
@@ -44,7 +46,6 @@ request('https://www.chinatownology.com/food_culture.html', (error, response, ht
     // // next= wat er na h1 in de div staat
     //   .text();
     //
-    // console.log(output)
 
     // $('#sidebar1 a').each(i, el) => {
 // each(i, el) herkent de terminal niet
@@ -60,14 +61,18 @@ request('https://www.chinatownology.com/food_culture.html', (error, response, ht
       // console.log(item);
       // console.log(link);
 
+      //file creeren
+     //   writeStream.write('${randomordercontent group1}, \n');
+    // console.log('scraping done...')
+
 
   }
-  });
+
 });
 
-app.listen(port);
-console.log('Magic happens on port' + port);
-exports = module.exports = app;
+// app.listen(port);
+// console.log('Magic happens on port' + port);
+// exports = module.exports = app;
 
 // terminal
 // cd pad naar de map

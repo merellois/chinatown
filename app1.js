@@ -31,9 +31,9 @@ app.get('/chinatownology', function (req,res){
   $ ('#container').filter(function(){
      paginaTitle = $(this).find('#mainContent').text();
 
-  keywords.forEach(function(elem, index){
-    var imageElement - "<img scr=" + keywords[index] + "'>'"
-  }
+  // keywords.forEach(function(elem, index){
+  //   var imageElement - "<img scr=" + keywords[index] + "'>'"
+  // }
 
       $ ('#container').filter(function(){    // CHINATOWNOLOGY
         paginaTitle = $(this).find('tbody').text();
