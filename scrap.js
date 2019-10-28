@@ -10,7 +10,7 @@ const cheerio = require('cheerio');
 // second parameter of a function: =>
   // a subroutine is a sequence of program instructions that performs a specific task, packaged as a unit.
   // error, response, html
-request('https://www.chinatownology.com/food_culture.html', (error, response, html) => {
+request('https://www.chinatownology.com/dragon_dance.html', (error, response, html) => {
 
 // make sure there are no errors
 //200 is a succesful http response OK: statuscode = comminiceren de server en de browser met elkaar
@@ -25,7 +25,6 @@ request('https://www.chinatownology.com/food_culture.html', (error, response, ht
     // console.log(mainContent.html());
 
 // text, krijg je alleen de text van de website te zien
-    console.log(mainContent.text());
 
     // INSPECTEER ELEMENT!!!!!! van de website die genoteerd staat bij var.url
     //       # id
@@ -34,9 +33,11 @@ request('https://www.chinatownology.com/food_culture.html', (error, response, ht
 
 // specifieker zoeken op de website
     const output = mainContent
-    .find('.randomordercontent group1')
+    .find('scr')
     .text()
-    .replace(/\s\s+/g, '');
+    // .replace(/\s\s+/g, '');
+
+    console.log(mainContent.text());
 
   // find = childern
   // next = parents
