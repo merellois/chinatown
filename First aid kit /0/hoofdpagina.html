@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+
+  <title> Your Furtune Telling Machine </title>
+
+  <link rel="stylesheet" href="hoofdpagina.css" />
+
+</head>
+<body>
+
+<!-- <div class="Tiger">
+<a href="../1/1.html" > tiger </a>
+</div> -->
+
+<div class="F">
+<p>F</p>
+</div>
+
+
+<div class="hoofd">
+<p>Your Furtune Telling Machine</p>
+</div>
+
+
+<div class="title">
+<p>ind out what your fortune is for</p>
+</div>
+
+
+<div class="D">
+<p>D</p>
+</div>
+
+<div class="title1">
+<p>epending on your </p>
+</div>
+
+<div class="title2">
+<p>Zodiac Sign</p>
+</div>
+
+
+<div class="stage1">
+<div class="layer1"></div>
+</div>
+
+<!-- de postitie in de html geeft de gelaagdheid aan van de html -->
+<div class="stage">
+<div class="layer"></div>
+</div>
+
+<div class="button">
+  <!-- my function is geen id, dus kan die niet worden aangeven zoals bij
+de demo, die wordt aangegeven door <p> </p> waardoor er text geschreven wordt ... -->
+<button onclick="myFunction()"> Prepare yourself for the future</button>
+</div>
+
+<!-- <a href="../1/1.html"></a> dit in de id van de demo zien te krijgen -->
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var text;
+  var zodiac = prompt("What is the year your are born in?", "");
+  switch(zodiac) {
+    case "1926":
+    case "1938":
+    case "1950":
+    case "1962":
+    case "1974":
+    case "1986":
+    case "1998":
+    case "2010":
+    case "2022":
+      text = "Your zodiac sign is a <a href='../tiger/1.html'>TIGER</a>";
+break;
+
+    case "1924":
+    case "1936":
+    case "1948":
+    case "1960":
+    case "1972":
+    case "1984":
+    case "1996":
+    case "2008":
+    case "2020":
+      text = "Your zodiac sign is a <a href='../rat/rat.html'>RAT</a>";
+break;
+
+      case "1925":
+      case "1937":
+      case "1949":
+      case "1961":
+      case "1973":
+      case "1985":
+      case "1997":
+      case "2009":
+      case "2022":
+        text = "Your zodiac sign is a <a href='../ox/1.html'>OX</a>";
+break;
+
+        case "1927":
+        case "1939":
+        case "1951":
+        case "1963":
+        case "1975":
+        case "1987":
+        case "1999":
+        case "2011":
+        case "2023":
+          text = "Your zodiac sign is a <a href='../rabbit/1.html'>RABBIT</a>";
+break;
+
+          case "1928":
+          case "1940":
+          case "1952":
+          case "1964":
+          case "1976":
+          case "1988":
+          case "2000":
+          case "2012":
+          case "2024":
+            text = "Your zodiac sign is a <a href='../dragon/1.html'>DRAGON</a>";
+break;
+
+            case "1929":
+            case "1941":
+            case "1953":
+            case "1965":
+            case "1977":
+            case "1989":
+            case "2001":
+            case "2013":
+            case "2025":
+              text = "Your zodiac sign is a <a href='../snake/1.html'>SNAKE</a>";
+break;
+
+              case "1930":
+              case "1942":
+              case "1954":
+              case "1966":
+              case "1978":
+              case "1990":
+              case "2002":
+              case "2014":
+              case "2026":
+                text = "Your zodiac sign is a <a href='../horse/1.html'>HORSE</a>";
+break;
+
+                case "1931":
+                case "1943":
+                case "1955":
+                case "1967":
+                case "1979":
+                case "1991":
+                case "2003":
+                case "2015":
+                case "2027":
+                  text = "Your zodiac sign is a <a href='../goat/1.html'>GOAT</a>";
+break;
+
+                  case "1932":
+                  case "1944":
+                  case "1956":
+                  case "1968":
+                  case "1980":
+                  case "1992":
+                  case "2004":
+                  case "2016":
+                  case "2028":
+                    text = "Your zodiac sign is a <a href='../monkey/1.html'>MONKEY</a>";
+break;
+
+                    case "1933":
+                    case "1945":
+                    case "1957":
+                    case "1969":
+                    case "1981":
+                    case "1993":
+                    case "2005":
+                    case "2017":
+                    case "2029":
+                      text = "Your zodiac sign is a <a href='../rooster/1.html'>ROOSTER</a>";
+break;
+
+                      case "1934":
+                      case "1946":
+                      case "1958":
+                      case "1970":
+                      case "1982":
+                      case "1994":
+                      case "2006":
+                      case "2018":
+                      case "2030":
+                        text = "Your zodiac sign is a <a href='../dog/1.html'>DOG</a>";
+break;
+
+                        case "1935":
+                        case "1947":
+                        case "1959":
+                        case "1971":
+                        case "1983":
+                        case "1995":
+                        case "2007":
+                        case "2019":
+                        case "2031":
+                          text = "Your zodiac sign is a <a href='../pig/1.html'>PIG</a>";
+break;
+
+    default:
+      text = "ERROR";
+
+
+  }
+  // ... hier word de id met de demo gelinkt aan de tekst
+
+  // ik moet het gelinkt krijgen aan een link van de webpage
+    // als je op oke drukt dan krijg je het logo van het dier dat je bent
+    // link van word: jouw zodiac sign is de tijger, is de tijger een link naar de webite
+
+  // + de button kunnen stylen in scc
+
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css?family=Sonsie+One&display=swap" rel="stylesheet">
+
+<script src="hoofdpagina.js"></script>
+
+</body>
+</html>

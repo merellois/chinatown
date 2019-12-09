@@ -1,0 +1,233 @@
+body {
+background-color: rgba(181, 255, 0, 1);
+
+}
+
+.hoofd {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 700px;
+  font-size: 50px;
+  font-family: 'Sonsie One', cursive;
+  color:rgba(181, 255, 0, 1);
+  z-index: 0;
+  -webkit-animation: neon2 8s ease-in-out infinite alternate;
+  animation: neon2 8s ease-in-out infinite alternate;
+
+}
+
+.F {
+position: absolute;
+margin-top: -500px;
+margin-left: 250px;
+font-size: 390px;
+color: rgb(203, 131, 252);
+font-family: 'Playball', cursive;
+font-style: italic;
+
+}
+
+.title {
+  position: absolute;
+  margin-top: 110px;
+  margin-left: 445px;
+  font-size: 100px;
+  font-family: 'Sonsie One', cursive;
+  color: rgb(203, 131, 252);
+  z-index: 0;
+
+}
+
+.layer {
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ transform-style: preserve-3d;
+ animation: ಠ_ಠ 10s infinite alternate ease-in-out -7.5s;
+ animation-fill-mode: forwards;
+ transform: rotateY(100deg) rotateX(200deg) translateZ(100deg);
+
+}
+
+.layer:after {
+ position: absolute;
+ margin-top: 380px;
+ margin-left: 1200px;
+ font-size: 170px;
+ font-family: 'Sonsie One', cursive;
+ content: '2019';
+ height: 100%;
+ width: 100%;
+ top: 50px;
+ color: rgba(181, 255, 0, 1);
+ z-index: 2;
+ -webkit-animation: neon2 1.0s ease-in-out infinite alternate;
+ animation: neon2 0.5s ease-in-out infinite alternate;
+}
+
+/* .layer1 {
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ transform-style: preserve-3d;
+ animation: ಠ_ಠ1 5s infinite alternate ease-in-out -7.5s;
+ animation-fill-mode: forwards;
+ transform: rotateY(500deg) rotateX(400deg) translateZ(500deg);
+
+}
+
+.layer1:after {
+ position: absolute;
+ margin-top: 700px;
+ margin-left: 280px;
+ font-size: 170px;
+ font-family: 'Sonsie One', cursive;
+ content: 'Zodiac Sign';
+ height: 100%;
+ width: 100%;
+ top: 50px;
+ color: rgba(181, 255, 0, 1);
+ z-index: 2;
+ -webkit-animation: neon2 1.0s ease-in-out infinite alternate;
+ animation: neon2 0.5s ease-in-out infinite alternate;
+} */
+
+@keyframes ಠ_ಠ {
+  from{
+  transform: rotateY(0deg) rotateX(0deg) rotateY(0deg);
+  }
+  to{
+  transform: rotateY(200deg) rotateX(400deg) rotateY(200deg);
+  }
+}
+
+/* @keyframes ಠ_ಠ1 {
+  from{
+  transform: rotateY(0deg) rotateX(0deg) rotateY(0deg);
+  }
+  to{
+  transform: rotateY(400deg) rotateX(400deg) rotateY(200deg);
+  }
+} */
+
+
+@-webkit-keyframes neon2 {
+  from {
+    text-shadow: 5px 0 8px  rgb(203, 131, 252), 0 0 10px rgba(181, 255, 0, 1), 0 0 10px rgb(203, 131, 252);
+  }
+  to {
+    text-shadow: 6px 0 7px rgba(181, 255, 0, 1) , 0 0 5px rgb(203, 131, 252), 0 0 5px rgba(181, 255, 0, 1);
+  }
+}
+
+.D {
+position: absolute;
+margin-top: -50px;
+margin-left: 10px;
+font-size: 390px;
+color: rgb(203, 131, 252);
+font-family: 'Playball', cursive;
+font-style: italic;
+
+}
+
+
+.title1 {
+  position: absolute;
+  margin-top: 500px;
+  margin-left: 380px;
+  font-size: 100px;
+  font-family: 'Sonsie One', cursive;
+  color: rgb(203, 131, 252);
+  z-index: 0;
+
+}
+
+.title2 {
+  position: absolute;
+  margin-top: 550px;
+  margin-left: 280px;
+  font-size: 170px;
+  font-family: 'Sonsie One', cursive;
+  color: rgb(203, 131, 252);
+  z-index: 0;
+  -webkit-animation: size 6s ease-in-out infinite alternate;
+  animation: size 6s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes size {
+  from {
+transform: scaleX(0);
+
+  }
+  to {
+transform:  scaleX(1);
+  }
+}
+
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 1px 3px 0px  rgb(203, 131, 252), 0 0 0px rgba(181, 255, 0, 1), 0 0 10px rgb(203, 131, 252);
+  }
+  to {
+    text-shadow: 1px 0 0px rgba(181, 255, 0, 1) , 0 0 0px rgb(203, 131, 252), 0 0 5px rgba(181, 255, 0, 1);
+  }
+}
+
+#demo{
+  position: absolute;
+  margin-left: 25%;
+  margin-top: 1080px;
+  font-size: 60px;
+  content: '2019';
+  font-family: 'Sonsie One', cursive;
+  color: rgb(203, 131, 252);
+  -webkit-animation: neon2 0.6s ease-in-out infinite alternate;
+  animation: neon2 0.6s ease-in-out infinite alternate;
+  z-index: 4;
+
+}
+
+a:link {
+  color: rgb(203, 131, 252);
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: rgba(181, 255, 0, 1);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(203, 131, 252);
+  /* font-style: italic; */
+  -webkit-animation: neon2 0.5s ease-in-out infinite alternate;
+  animation: neon2 0.5s ease-in-out infinite alternate;
+
+}
+
+/* selected link */
+a:active {
+  color: rgba(181, 255, 0, 1);
+}
+
+button {
+    background-color: transparent;
+    font-family: 'Sonsie One', cursive;
+    color: rgba(181, 255, 0, 1);
+    outline: none;
+    font-size: 80px;
+    margin-left: 50px;
+    margin-top: 950px;
+    position: absolute;
+    border: 0;
+ border-radius: 0;
+ -webkit-animation: neon1 0.6s ease-in-out infinite alternate;
+ animation: neon1 0.6s ease-in-out infinite alternate;
+}
+button:hover {
+    cursor: pointer;
+    color: rgb(203, 131, 252);
+}
