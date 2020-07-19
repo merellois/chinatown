@@ -7,7 +7,18 @@ index = 0;
   // const writeStream = fs.createWriteStream('post.csv');
   //write headers : file creeren
   // writeStream.write('randomordercontent group1 \n')
-const url_lijst = ["https://stockphoto.com/search.php?q=++policemen",]
+const url_lijst = ["https://www.chinahighlights.com/travelguide/chinese-zodiac/monthly-fortune-for-rat.htm",
+"https://www.chinahighlights.com/travelguide/chinese-zodiac/monthly-fortune-for-ox.htm",
+"https://www.chinahighlights.com/travelguide/chinese-zodiac/monthly-fortune-for-tiger.htm",
+"https://www.chinahighlights.com/travelguide/chinese-zodiac/monthly-fortune-for-rabbit.htm",
+"https://www.chinahighlights.com/travelguide/chinese-zodiac/monthly-fortune-for-dragon.htm",
+"https://www.chinahighlights.com/travelguide/chinese-zodiac/monthly-fortune-for-snake.htm",
+"https://www.chinahighlights.com/travelguide/chinese-zodiac/monthly-fortune-for-horse.htm",
+"https://www.chinahighlights.com/travelguide/chinese-zodiac/monthly-fortune-for-goat.htm",
+"https://www.chinahighlights.com/travelguide/chinese-zodiac/monthly-fortune-for-monkey.htm",
+"https://www.chinahighlights.com/travelguide/chinese-zodiac/monthly-fortune-for-rooster.htm",
+"https://www.chinahighlights.com/travelguide/chinese-zodiac/monthly-fortune-for-dog.htm",
+"https://www.chinahighlights.com/travelguide/chinese-zodiac/monthly-fortune-for-pig.htm"]
 // second parameter of a function: =>
   // a subroutine is a sequence of program instructions that performs a specific task, packaged as a unit.
   // error, response, html
@@ -53,15 +64,16 @@ request({
 
   // let's create a javascript object to save our data in
    let catched_data= {
+    text: '',
     img: ''
   };
 
   // all the content we are looking for are inside a div with the id 'content', let's filter so that the data we are working with is without unnecessary data
-  $('.search.sticky').filter(function(){
+  $('#mainContentRight').filter(function(){
 
     // we can access the properties of our javascript object by writing the name of the object 'dot' and then the name of the property
-    // catched_data.text = $(this).find('div.table-responsive').text();
-    catched_data.img = $(this).find('.results-item').attr('data-ng-href');
+    catched_data.text = $(this).find('div.table-responsive').text();
+    catched_data.img = $(this).find('img.img-responsive').attr('src');
     // alt, de overeenkomende titel
     // url.paragraph = $(this).find('p').first().text();
 
@@ -71,7 +83,7 @@ request({
     // console.log(MainhotelContent.text());
     // const data = table-responsive.text();
 
-    fs.writeFile('StockPhoto-'+index+'.js', catched_data.img, function(error){
+    fs.writeFile('china_output-'+index+'.js', catched_data.img, function(error){
       console.log("file written!");
     });
     index++;

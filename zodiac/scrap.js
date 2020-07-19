@@ -48,7 +48,6 @@ url_lijst.forEach(function(currentUrl){
                 temp_obj.zodiac = currentUrl.substring(currentUrl.search("monthly-fortune-for-"));
                 temp_obj.zodiac = temp_obj.zodiac.slice(0, temp_obj.zodiac.search(".htm"));
                 temp_obj.zodiac = temp_obj.zodiac.split("monthly-fortune-for-")[1];
-    // wat betekend de 1
 
                 // Elke titel van elke pagina zit in een H2 maar doordat er meerdere H2 elementen
                 // in de pagina zitten moeten we steeds de 5e H2 element hebben (dit weet ik dmv uitproberen)
